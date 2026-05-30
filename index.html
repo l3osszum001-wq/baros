@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Character Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5efe6; /* โทนสีครีมละมุนตามมู้ดของรูปภาพ */
+            color: #4a3f35;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        header p {
+            color: #8a7b6e;
+            font-size: 1.1rem;
+        }
+        /* จัดหน้าแกลเลอรีแบบ Grid */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        .item-info {
+            padding: 15px;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #6e6153;
+            border-top: 1px solid #f0eae1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My 3D Character Collection</h1>
+        <p>รวมภาพตัวละคร 3D สไตล์น่ารัก อบอุ่น</p>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="3D_character_based_on_woman_202605060014 (1).jpeg" alt="3D Character">
+            <div class="item-info">Casual Style - Denim</div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="3D_character_based_on_woman_202605060014.jpeg" alt="3D Character">
+            <div class="item-info">Casual Style - White</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="AI_image_prompt_template_202605112313 (1).jpeg" alt="3D Character">
+            <div class="item-info">Morning Routine - Star Pajamas</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="AI_image_prompt_template_202605112313 (2).jpeg" alt="3D Character">
+            <div class="item-info">Morning Routine - Purple Clouds</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="AI_image_prompt_template_202605112313 (3).jpeg" alt="3D Character">
+            <div class="item-info">Morning Routine - Pink Silk</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="AI_image_prompt_template_202605112313.jpeg" alt="3D Character">
+            <div class="item-info">Morning Routine - Cloud Set</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Cartoon_3D_character_based_on_202605060019.jpeg" alt="3D Character">
+            <div class="item-info">Cute Black Dress</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Cartoon_3D_character_standing_room_202605060014 (1).jpeg" alt="3D Character">
+            <div class="item-info">Cute Ponytail - Close up</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Cartoon_3D_character_standing_room_202605060014 (2).jpeg" alt="3D Character">
+            <div class="item-info">Cute Ponytail - Smiling</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Cartoon_3D_character_standing_room_202605060014.jpeg" alt="3D Character">
+            <div class="item-info">Cute Ponytail - Living Room</div>
+        </div>
+    </div>
+
+</body>
+</html>
